@@ -1,0 +1,31 @@
+{
+    // Use IntelliSense to find out which attributes exist for node debugging
+    // Use hover for the description of the existing attributes
+    // For further information visit https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Server",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/index.js",
+            "cwd": "${workspaceRoot}",
+            "env": {
+                "IP": "127.0.0.1",
+                "PORT": "8080",
+                "TOKEN_SECRET": "TOKEN_SECRET",
+                "DB_CONNECTIONSTRING": "mongodb://testing:testing@ds015953.mlab.com:15953/unit-testing",
+                "FACEBOOK_APP_ID": "2175327869359032",
+                "FACEBOOK_APP_SECRET": "ffcab02aa8349c8a8873d298a184b11c",
+                "GOOGLE_CLIENT_ID": "531559696910-4g6h64gmtgfmu90urqp6umrfgipouof7.apps.googleusercontent.com",
+                "GOOGLE_CLIENT_SECRET": "sLfn7zIc5y54GdKRmnjqrCq2"
+            }
+        },
+        {
+            "name": "Attach to Process",
+            "type": "node2",
+            "request": "attach",
+            "port": 9229
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+var config = require('./config.global');
+
+config.env = "production";
+config.ip = process.env.IP;
+config.port = process.env.PORT;
+config.mongo = {};
+config.mongo.connectionstring = process.env.DB_CONNECTIONSTRING;
+config.TOKEN_SECRET = process.env.TOKEN_SECRET;
+config.FACEBOOK_APP_ID = process.env.FACEBOOK_APP_ID
+config.FACEBOOK_APP_SECRET = process.env.FACEBOOK_APP_SECRET;
+config.GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID;
+config.GOOGLE_CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET;
+// config.FOURSQUARE_SECRET = process.env.FOURSQUARE_SECRET || 'Foursquare Client Secret';
+// config.GITHUB_SECRET = process.env.GITHUB_SECRET || 'GitHub Client Secret';
+// config.LINKEDIN_SECRET = process.env.LINKEDIN_SECRET || 'LinkedIn Client Secret';
+// config.WINDOWS_LIVE_SECRET = process.env.WINDOWS_LIVE_SECRET || 'Windows Live Secret';
+// config.TWITTER_KEY = process.env.TWITTER_KEY || 'Twitter Consumer Key';
+// config.TWITTER_SECRET = process.env.TWITTER_SECRET || 'Twitter Consumer Secret';
+// config.TWITTER_CALLBACK = process.env.TWITTER_CALLBACK || 'Twitter Callback URL';
+// config.YAHOO_SECRET = process.env.YAHOO_SECRET || 'Yahoo Client Secret';
+module.exports = config;

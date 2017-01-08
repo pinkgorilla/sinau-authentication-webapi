@@ -1,6 +1,8 @@
+var config = require("../config");
+
 module.exports = {
     get: function() {
         var factory = require("mongo-factory");
-        return factory.getConnection(process.env.DB_CONNECTIONSTRING);
+        return factory.getConnection(config.mongo.connectionstring);
     }
-};
+}

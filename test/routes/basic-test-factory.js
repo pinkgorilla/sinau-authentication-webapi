@@ -1,5 +1,6 @@
 require("should");
-const host = `${process.env.IP}:${process.env.PORT}`;
+var config = require("../../config");
+const host = `${config.ip}:${config.port}`;
 var Request = require("supertest");
 var ObjectId = require("mongodb").ObjectId;
 

@@ -1,7 +1,8 @@
 require("should");
 var Request = require("supertest");
 var Account = require("sinau-modules").test.data.auth.account;
-const host = `${process.env.IP}:${process.env.PORT}`;
+var config = require("../../../config");
+const host = `${config.ip}:${config.port}`;
 var request = Request(host);
 
 module.exports = function() {

@@ -1,9 +1,9 @@
 require("should");
-const host = `${process.env.IP}:${process.env.PORT}`;
 var Request = require("supertest");
 var Account = require("sinau-modules").test.data.auth.account;
-var request = Request(host);
-require("should");
+var config = require("../../../config");
+const host = `${config.ip}:${config.port}`;
+var request = Request(host); 
 var ObjectId = require("mongodb").ObjectId;
 var jwt;
 

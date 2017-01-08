@@ -1,7 +1,8 @@
 require("should");
-const host = `${process.env.IP}:${process.env.PORT}`;
 var Request = require("supertest");
 var ObjectId = require("mongodb").ObjectId; 
+var config = require("../../../config");
+const host = `${config.ip}:${config.port}`;
 var request = Request(host);
 
 it("#01. get profile without security token - [GET]/me", function(done) {

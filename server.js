@@ -5,6 +5,7 @@ function server() {
 
         var whitelist = [
             'http://localhost:9000',
+            'https://sinau-aurelia-client-dev.herokuapp.com'
         ];
         var corsOptions = {
             origins: whitelist,
